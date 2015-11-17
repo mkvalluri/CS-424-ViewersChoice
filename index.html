@@ -15,47 +15,197 @@
 <body>
     <!-- Body Portion -->
     
-      <div class="container-fluid">
+      <div class="container-fluid text-justify">
         <div class="row">
             <div class="col-md-1 col-md-offset-1 text-left">
                 <ul class="nav nav-pills nav-stacked text-right">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <!--what is the data? how was it collected? 
+                    who are the users that this visualization was made for? 
+                    what questions do people want to ask? 
+                    how can they find the answers with this tool?
+                    what works and what needs improvement? -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#good">Good Things about Viz</a></li>
+                    <li><a href="#bad">Things that could have been better</a></li>
                 </ul>
             </div>
             <div class="col-md-10 rowContainer">
-                <h1>Viewers Choice Presentation</h1>
-                <p class="lead">Rave On is the third project in the CS424 (2015) course at UIC. 
+                <h1 id="home">Viewers Choice Presentation</h1>
+                <p class="lead">This page discusses about Life expectency and Probability of Death visualization developed by <a href="http://www.healthdata.org/">Institute for Health Metrics and Evaluation</a>. You can check the viz on this <a href="http://vizhub.healthdata.org/life-expectancy/">link</a>.
                 </p>
-
-                <h3>Description</h3>
-                <ul>
-                    <li>
-                        <a href="http://http://d3js.org/" target="_blank">D3JS</a>: Javascript library for manipulating documents based on data.
-                    </li>
-                </ul>
-
-                <h3>Good Features</h3>
-                 
-                 
-                <h3>That could have been Better</h3>    
-                <!-- 16:9 aspect ratio -->
-
-                <h3>Findings</h3>
-                <h4>You can download the sourcecode of this project from this <a href="#https://github.com/mvallu/CS-424-Project-3"><b>link</b></a>. Once downloaded, follow the instructions given below to run the application</h4>                
-                <h4>Instructions</h4>
-                <ul>
-                    <li>Download the sourcecode</li>
-
-                </ul>
                 
+                <b><h3 id="data">Description</h3></b>
+                <hr>
                 <div class="row">
+                </div>
+
+                <b><h3 id="data">Data</h3></b>
+                <hr> 
+                <div class="row">
+                    <div class="col-md-6">
+                    <p>Data is about what are the different causes of death. It contains information collected from 1990 to 2013 and has information about all the countries. You can download the datasets from this 
+                    <a href="http://ghdx.healthdata.org/global-burden-disease-study-2013-gbd-2013-data-downloads">link</a>. Each file is around 30MB, stored in CSV format. You can view sample data in the screenshot.
+                    Most of the data is collected from surveys run in different parts of the world. Collecting information at this particular level is really difficult since the data is not only about cause of death in different 
+                    coutries but also it is for a long period i.e. from 1990 to 2013. Also surveys were the first source for information since many of those countries doesn't have these kind of data readily available.
+                    Also since the data is about all the countries data collected might be of various formats and integrating them together is another challenging job. 
+                    </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/images/data.jpg" width="620vw">
+                    </div>
+                </div>
+                
+                <b><h3 id="features">Features</h3></b>
+                <hr> 
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/l1.gif" alt="...">
+                            <div class="caption">
+                                <h4>Life Expectency</h4>
+                                <p>View how life expectency changed from 1990 to 2014 on either map or chart.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/l2.gif" alt="...">
+                            <div class="caption">
+                                <h4>Cause of Death</h4>
+                                <p>View different causes of death and how it changed from 1990 to 2014 in the form of map and chart</p>
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/l3.gif" alt="...">
+                            <div class="caption">
+                                <h4>Play/Pause</h4>
+                                <p>Play/Pause functonality to view how countries improved in case of life expectency.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/l4.gif" alt="...">
+                            <div class="caption">
+                                <h4>Filter / Sort / Group Data</h4>
+                                <p>Filter, sort data based on gender, cause of death, year and location. Also group data by ages.</p>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/l5.gif" alt="...">
+                            <div class="caption">
+                                <h4>Detailed Information</h4>
+                                <p>Get deatailed information about different causes of death in a single click.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                
+                <b><h3 id="good">Good Things about the Viz</h3></b>    
+                <hr>           
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/g1.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Color Palette</h4>
+                                <p>Overall color palatte is good. Colors don't look that bright and each color has some meaning. 
+                                For example: When there is some improvement in the life expectency, the color was moving towards blue and when the life expectency was decreasing, color was moving towards red.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/g2.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Controls</h4>
+                                <p>We have controls for locking down the scale which is useful when we are comparing data over different years. 
+                                   Also we have Play/Pause button which helps us and makes it easier for us to identify which countries/regions are moving towards blue color and which are moving towards red.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/g3.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Charts</h4>
+                                <p>Then we have charts which helps us pick few countries of our interest and compare data among them. 
+                                   This makes sense when we want to do direct comparision instead of looking at the maps and keep track of those colors.</p>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+                <div class="row">               
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/g4.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Information at Single Location</h4>
+                                <p>When we click on each bar in life expectency chart, detailed description on all the different causes of death is given at one single place which is 
+                                   good representation since we don't want to move around the screen too much to get information about different causes of death.</p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                 
+                <b><h3 id="bad">That could have been Better</h3></b>
+                <hr> 
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/n1.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Poor Design on Charts Page</h4>
+                                <p>Using of legend to filter the content is very bad design. Unless they are moving mouse over entire screen it is very difficult for 
+                                   people to know that there is a legend over there and it has some funcitonality built in it. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/n2.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Inconsistent Functionality</h4>
+                                <p>There is hover functonality in one page and click on another. In general it is better to use click since that would be helpful on touch displays as well. Many might miss it aswell.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/n3.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Dropdown Position</h4>
+                                <p>Drop down which contains variosu types of causes of death is not placed properly - Many might miss it because it was not there in life expectency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="/images/n4.jpg" alt="...">
+                            <div class="caption">
+                                <h4>Not Giving User a Choice</h4>
+                                <p>There are seperate charts for male and female in causes of death, but it would have been better if we had both option as well and let the user decide which charts he want to see.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <hr>
         <footer class="text-center">
-            <h5></h5>
+            <h5>&copy 2015. Murali Krishna Valluri</h5>
         </footer>
     </div>
     <script src="js/jquery-2.1.4.min.js"></script>
