@@ -4,7 +4,8 @@ body {
 
 .rowContainer {  
   margin-top: -10px;
-  border-left: 0.1em solid gray;
+  border-left: 0.1em transparent gray;
+  border-right: 0.1em transparent gray;
   width: calc(100% / 12 * 9);
 }
 
